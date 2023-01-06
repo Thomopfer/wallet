@@ -220,6 +220,7 @@ img {
 .listado__elemento{
     margin-bottom: 4rem;
     padding: 2rem;
+    background-color: var(--blanco);
 
     box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
     transition: transform 300ms;
@@ -245,5 +246,53 @@ img {
 .listado__texto{
     margin: 0;
     font-size: 2rem;
+}
+
+
+/*#########################################################*/
+/**********************#### SEGURIDAD ####******************/
+/*#########################################################*/
+
+
+.seguridad{
+    background-color: var(--primario);
+    padding: 15rem 0;
+
+    position: relative;
+    margin: 10rem 0;
+    overflow: hidden;
+}
+
+.seguridad::before,
+.seguridad::after{
+    background-color: var(--blanco);
+    content: '';
+    height: 20rem;
+    width: 130%;
+    position: absolute;
+    transform: rotate(3deg);
+}
+.seguridad::before{
+    top: -10rem;
+    left: 0;
+}
+.seguridad::after{
+    bottom: -10rem;
+    left: -5rem;
+}
+
+.seguridad__heading{
+    color: var(--blanco);
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) { 
+    .seguridad__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: center;
+    }
 }
 
