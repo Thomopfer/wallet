@@ -38,7 +38,8 @@ img {
     max-width: 100%;
     display: block;
 }
-.contenedor {
+
+[class$="__contenedor"] {
     max-width: 120rem;
     margin: 0 auto;
     width: 90%;
@@ -187,4 +188,62 @@ img {
 /**********************#### NUCLEUS ####********************/
 /*#########################################################*/
 
+
+.nucleus__heading{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.nucleus__grid{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) { 
+    .nucleus__grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) { 
+    .nucleus__img{
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+
+}
+
+
+.listado__elemento{
+    margin-bottom: 4rem;
+    padding: 2rem;
+
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
+    transition: transform 300ms;
+}
+
+@media (min-width: 768px) { 
+    .listado__elemento:hover{
+        transform: scale(1.1);
+    }
+
+    .listado__elemento:last-of-type{
+        margin-bottom: 0;
+    }
+}
+
+
+.listado__heading{
+    color: var(--primario);
+    margin: 0;
+    font-size: 3rem;
+}
+
+.listado__texto{
+    margin: 0;
+    font-size: 2rem;
+}
 
