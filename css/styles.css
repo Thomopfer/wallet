@@ -256,29 +256,16 @@ img {
 
 .seguridad{
     background-color: var(--primario);
-    padding: 15rem 0;
+    padding: 10rem 0;
+    margin: 3rem 0;
 
-    position: relative;
-    margin: 10rem 0;
-    overflow: hidden;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
 }
 
-.seguridad::before,
-.seguridad::after{
-    background-color: var(--blanco);
-    content: '';
-    height: 20rem;
-    width: 130%;
-    position: absolute;
-    transform: rotate(3deg);
-}
-.seguridad::before{
-    top: -10rem;
-    left: 0;
-}
-.seguridad::after{
-    bottom: -10rem;
-    left: -5rem;
+@media (min-width: 768px) { 
+    .seguridad{
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    }
 }
 
 .seguridad__heading{
