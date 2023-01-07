@@ -74,7 +74,7 @@ img {
 
 @media (min-width: 1280px) { 
     .header{
-        background-size: 110rem;
+        background-size: 88rem;
     }
 }
 
@@ -339,7 +339,7 @@ img {
     }
 
     .comisiones__img{
-        max-width: 30rem;
+        max-width: 40rem;
         margin: 0 auto;
     }
 }
@@ -348,4 +348,113 @@ img {
     .comisiones__grid{
         align-items: center;
     }
+}
+
+
+/*#########################################################*/
+/*******************#### TESTIMONIALES ####*****************/
+/*#########################################################*/
+
+
+.testimoniales{
+    background-color: var(--primario);
+    padding: 5rem 0;
+}
+
+.testimoniales__heading{
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 0;
+}
+
+.testimoniales__grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) { 
+    .testimoniales__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.testimonio{
+    background-color: var(--blanco);
+    padding: 1rem 2rem 1rem;
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
+
+    background-image: url(../img/comilla.png);
+    background-repeat: no-repeat;
+    background-size: 4rem;
+    background-position: 1rem 1rem;
+}
+
+@media (min-width: 768px) { 
+    .testimonio{
+        margin-bottom: 0;
+        padding: 1rem 2rem 1rem;
+
+        background-size: 3rem;
+        background-position: 3rem 3rem;
+
+        transition: transform 300ms;
+    }
+
+    .testimonio:hover{
+        transform: scale(1.05);
+    }
+}
+
+.testimonio__texto{
+    text-align: center;
+}
+
+.testimonio__autor{
+    text-align: right;
+    color: var(--primario);
+    font-weight: 700;
+}
+
+.testimonio__autor::before{
+    content: '—';
+}
+
+
+/*#########################################################*/
+/***********************#### FOOTER ####********************/
+/*#########################################################*/
+
+
+.footer{
+    background-color: #5a30a3;
+}
+
+.footer__flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+@media (min-width: 768px) { 
+    .footer__flex{
+        flex-direction: row;
+    }
+}
+
+.footer__logo{
+    width: 15rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) { 
+    .footer__logo{
+        margin-bottom: 0;
+    }
+}
+
+.footer .navegacion__link{
+    color: var(--blanco);
 }
